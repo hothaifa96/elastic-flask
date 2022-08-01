@@ -24,7 +24,7 @@ currencies = [
     {"GBP": 0.8353},
     {"ILS": 3.4311}]
 
-@app.route('/currency', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def getUsers():
     if request.method == 'GET':
         return json.dumps(currencies)
